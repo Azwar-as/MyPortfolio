@@ -1,0 +1,163 @@
+body {
+  overflow-x: hidden;
+}
+.blur-navbar {
+  backdrop-filter: blur(20px);
+}
+.about-me {
+  background-color: #0f1d31;
+}
+.introduction {
+  width: 100%;
+  height: 100vh;
+}
+.fs-custom {
+  font-size: 3rem;
+}
+
+/* Background Mp4 */
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+
+/* Fonts Style */
+.myFont {
+  font-family: "Chakra Petch";
+  text-decoration: none;
+}
+
+.fontsTech {
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.hvr-link:hover {
+  color: #38b6ff !important;
+}
+
+/* tentang saya */
+
+/* Custom Color */
+.text-main {
+  color: #38b6ff;
+}
+/* Border Costum */
+.border-custom {
+  border: 3px solid #38b6ff;
+  box-shadow: 0rem 0rem 1rem #04befe;
+}
+
+/* Button Costum */
+.btn-custom {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 45px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-custom:hover {
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-custom:focus {
+  outline: none;
+}
+
+.btn-custom.btn-cs {
+  background-image: linear-gradient(
+    to right,
+    #25aae1,
+    #4481eb,
+    #04befe,
+    #3f86ed
+  );
+  box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.portfolio {
+  padding-block: 10rem;
+}
+.certificate {
+  padding-block: 6rem;
+}
+.swiper-container1 .swiper-slide {
+  height: 55vh;
+}
+.swiper-container1 {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.swiper-container2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.swiper-button-next {
+  color: #fcfeff;
+  background-color: rgba(255, 255, 255, 0.37);
+  padding: 2rem;
+  border-radius: 100%;
+}
+
+.swiper-button-prev {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.37);
+  padding: 2rem;
+  border-radius: 100%;
+}
+
+.bg-custome {
+  background-color: #0f1d31 !important;
+}
