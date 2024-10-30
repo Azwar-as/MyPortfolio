@@ -1,21 +1,29 @@
+/* --- Global Styles --- */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  width: 100%;
   overflow-x: hidden;
 }
-.blur-navbar {
-  backdrop-filter: blur(20px);
+
+/* --- Custom Font Styles --- */
+.myFont {
+  font-family: "Chakra Petch";
+  text-decoration: none;
 }
-.about-me {
-  background-color: #0f1d31;
+
+.fontsTech {
+  font-family: sans-serif;
+  text-decoration: none;
 }
-.introduction {
-  width: 100%;
-  height: 100vh;
-}
+
 .fs-custom {
   font-size: 3rem;
 }
 
-/* Background Mp4 */
+/* --- Background Video Styles --- */
 .video-background {
   position: fixed;
   top: 0;
@@ -35,34 +43,83 @@ video {
   object-fit: cover;
 }
 
-/* Fonts Style */
-.myFont {
-  font-family: "Chakra Petch";
-  text-decoration: none;
+/* --- Navbar Styles --- */
+.blur-navbar {
+  backdrop-filter: blur(20px);
 }
 
-.fontsTech {
-  font-family: sans-serif;
-  text-decoration: none;
+.introduction {
+  width: 100%;
+  height: 100vh;
+}
+
+/* --- Section: About Me --- */
+.about-me {
+  background-color: #0a132093;
+  backdrop-filter: blur(20px);
+  padding: 1.5rem;
+}
+
+.text-main {
+  color: #38b6ff;
+}
+
+.border-custom {
+  border: 3px solid #38b6ff;
+  box-shadow: 0rem 0rem 1rem #04befe;
+}
+
+/* --- Section: Portfolio --- */
+.portfolio {
+  padding-block: 10rem;
+}
+
+/* --- Section: Certificate --- */
+.certificate {
+  padding-block: 6rem;
+  background-color: #0a132093;
+  backdrop-filter: blur(20px);
+}
+
+/* --- Section: Contact Me --- */
+.contact-me {
+  background-color: #0a132093;
+  backdrop-filter: blur(20px);
+  padding: 1.5rem;
+}
+
+/* --- Social Media Styles --- */
+.socialMedia li {
+  list-style-type: none;
 }
 
 .hvr-link:hover {
   color: #38b6ff !important;
 }
 
-/* tentang saya */
-
-/* Custom Color */
-.text-main {
-  color: #38b6ff;
-}
-/* Border Costum */
-.border-custom {
-  border: 3px solid #38b6ff;
-  box-shadow: 0rem 0rem 1rem #04befe;
+/* --- Custom Colors --- */
+.bg-custome {
+  background-color: #0f1d31 !important;
 }
 
-/* Button Costum */
+/* --- Card Styles --- */
+.card-custome {
+  background-color: #000c1d6e;
+  backdrop-filter: blur(20px);
+  border: 2px solid;
+  border-radius: 2rem;
+}
+
+/* --- Logo Text --- */
+.logo-text {
+  text-decoration: none;
+}
+
+.logo-text p {
+  margin-left: -1rem;
+}
+
+/* --- Button Custom Styles --- */
 .btn-custom {
   width: 160px;
   font-size: 16px;
@@ -75,15 +132,11 @@ video {
   border: none;
   background-size: 300% 100%;
   border-radius: 50px;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
 .btn-custom:hover {
   background-position: 100% 0;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
@@ -102,19 +155,15 @@ video {
   box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
-.portfolio {
-  padding-block: 10rem;
-}
-.certificate {
-  padding-block: 6rem;
-}
-.swiper-container1 .swiper-slide {
-  height: 55vh;
-}
+/* --- Swiper Container Styles --- */
 .swiper-container1 {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.swiper-container1 .swiper-slide {
+  height: 58vh;
 }
 
 .swiper-slide {
@@ -135,6 +184,7 @@ video {
   margin: auto;
 }
 
+/* --- Swiper Custom Buttons --- */
 .swiper-container2 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -156,8 +206,4 @@ video {
   background-color: rgba(255, 255, 255, 0.37);
   padding: 2rem;
   border-radius: 100%;
-}
-
-.bg-custome {
-  background-color: #0f1d31 !important;
 }

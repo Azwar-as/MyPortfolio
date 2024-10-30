@@ -20,57 +20,44 @@
 
 <body>
     <nav class="navbar navbar-expand-lg p-2 fixed-top bg-custom shadow blur-navbar">
-        <div class=" container-fluid">
-            <a href="#"><img class="mx-4" src="./assets/img/logo.png" width="50" alt=""></a>
+        <div class=" container-fluid ">
+            <a href="#" class="d-flex logo-text text-white myFont">
+                <img class=" mx-4" src="./assets/img/logo.png" width="50" alt="">
+                <p class="my-auto fw-bold fs-5">AZURE<span class="text-main fw-lighter">DEV</span></p>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0  mx-auto">
+                <ul class="navbar-nav mb-2 mb-lg-0 fw-medium mx-auto gap-2">
                     <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-white-50 hvr-link" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" href="#">About Me</a>
+                        <a class="nav-link text-white-50 hvr-link" href="#about-me">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" href="#">Porftolio</a>
+                        <a class="nav-link text-white-50 hvr-link" href="#portfolio">Porftolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" href="#">Certificate</a>
+                        <a class="nav-link text-white-50 hvr-link" href="#certificate">Certificate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" href="#">Contact Me</a>
+                        <a class="nav-link text-white-50 hvr-link" href="#skill">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 hvr-link" href="#contact-me">Contact Me</a>
                     </li>
                 </ul>
-                <div class=" mx-auto" role="search">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="" class="nav-link text-white-50 hvr-link">
-                                <i class="bi bi-instagram me-1"></i> Instagram
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link text-white-50 hvr-link">
-                                <i class="bi bi-github me-1"></i> Github
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="" class="nav-link text-white-50 hvr-link">
-                                <i class="bi bi-linkedin me-1"></i> Linkedin
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     </nav>
 
     <main>
         <!-- Pendahuluan -->
-        <section class="introduction">
+        <section class="introduction" id="home">
             <div class="video-background">
                 <video autoplay muted loop id="myVideo">
                     <source src="./assets/img/bg-animation3.mp4" type="video/mp4">
@@ -100,16 +87,16 @@
             </div>
         </section>
         <!-- About-me -->
-        <section class="about-me myFont ">
+        <section class="about-me myFont " id="about-me">
             <div class="container-fluid w-100 h-100 ">
-                <div class="d-flex gap-5 p-5 w-100">
+                <div class="d-flex  p-5 w-100">
                     <div class="d-flex flex-column align-items-center w-100 gap-4 ">
                         <img class=" rounded-top-pill border-custom img-fluid p-2" src="./assets/img/myProfile-1.png"
                             width="35%" alt="">
                         <!-- My Identity -->
-                        <div class="text-center w-100">
+                        <div class="text-center w-75">
                             <h1 class="text-white">M.Azwar Anshari</h1>
-                            <p class="text-white-50  fs-5">Web and Mobile Developer</p>
+                            <p class="text-white-50 fs-5">Web and Mobile Developer</p>
                             <div class="fs-3 d-flex gap-5 justify-content-center">
                                 <a href="" class=" hvr-link text-white "><i class="bi bi-instagram"></i></a>
                                 <a href="" class=" hvr-link text-white "><i class="bi bi-github"></i></a>
@@ -120,7 +107,7 @@
                     <!-- Explanation about me -->
                     <div class="my-auto w-75">
                         <h4 class="text-main">About Me</h4>
-                        <h1 class="fw-bold">Good day, esteemed colleagues.</h1>
+                        <h1 class="fw-bold">Good day, esteemed colleagues!</h1>
                         <p class="fw-normal fs-5 fontsTech text-white-50">
                             I am an enthusiastic beginner programmer, focused on mastering JavaScript and Flutter
                             fundamentals. With a strong passion for web and software development, I am committed to
@@ -133,8 +120,8 @@
             </div>
         </section>
 
-        <!-- Porftfolio -->
-        <section class="portfolio">
+        <!-- Porftfolio Section -->
+        <section class="portfolio" id="portfolio">
             <div class="container-fluid">
                 <div class="myFont text-white text-center pb-5">
                     <h4 class="text-main">Portfolio</h4>
@@ -156,12 +143,15 @@
             </div>
         </section>
 
-        <section class="certificate">
+        <!-- Certificate Section -->
+        <section class="certificate" id="certificate">
             <div class="container-xxl">
                 <div class="text-center myFont pb-4">
                     <h4 class="fw-medium text-main">Certificate</h4>
                     <h1 class="fw-bolder">Webinar & Course</h1>
                 </div>
+
+                <!-- Certificate 1 -->
                 <div class="swiper swiper-container2">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide h-auto">
@@ -169,7 +159,7 @@
                                 <div class="row g-0 m-auto">
                                     <div class="col-md-4 w-50">
                                         <img src="./assets/img/certificate /cerficate1.png" class="img-fluid rounded-5"
-                                            alt="...">
+                                            alt="certificate1">
                                     </div>
                                     <div class="col-md-8 text-start m-auto w-50">
                                         <div class="card-body">
@@ -182,12 +172,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Certificate 2 -->
                         <div class="swiper-slide h-100">
                             <div class="card rounded-5 bg-custome m-auto p-3 w-75">
                                 <div class="row g-0 m-auto">
                                     <div class="col-md-4 w-50">
                                         <img src="./assets/img/certificate /certificate2.png"
-                                            class="img-fluid rounded-5" alt="...">
+                                            class="img-fluid rounded-5" alt="certificate2">
                                     </div>
                                     <div class="col-md-8 text-start m-auto w-50">
                                         <div class="card-body">
@@ -200,12 +192,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Certificate 3 -->
                         <div class="swiper-slide h-100">
                             <div class="card bg-custome rounded-5 m-auto p-3 w-75">
                                 <div class="row g-0 m-auto">
                                     <div class="col-md-4 w-50">
                                         <img src="./assets/img/certificate /certificate3.png"
-                                            class="img-fluid rounded-5" alt="...">
+                                            class="img-fluid rounded-5" alt="certificate3">
                                     </div>
                                     <div class="col-md-8 text-start m-auto w-50">
                                         <div class="card-body">
@@ -218,12 +212,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Certificate 4 -->
                         <div class="swiper-slide h-100">
                             <div class="card rounded-5 bg-custome m-auto p-3 w-75">
                                 <div class="row g-0 m-auto">
                                     <div class="col-md-4 w-50">
                                         <img src="./assets/img/certificate /certificate4.jpeg"
-                                            class="img-fluid rounded-5" alt="...">
+                                            class="img-fluid rounded-5" alt="certificate4">
                                     </div>
                                     <div class="col-md-8 text-start m-auto w-50">
                                         <div class="card-body">
@@ -236,12 +232,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Certificate 5 -->
                         <div class="swiper-slide h-100">
                             <div class="card rounded-5 bg-custome m-auto p-3 w-75">
                                 <div class="row g-0 m-auto">
                                     <div class="col-md-4 w-50">
                                         <img src="./assets/img/certificate /certificate5.jpeg"
-                                            class="img-fluid rounded-5" alt="...">
+                                            class="img-fluid rounded-5" alt="certificate5">
                                     </div>
                                     <div class="col-md-8 text-start m-auto w-50">
                                         <div class="card-body">
@@ -254,16 +252,18 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Certificate 6 -->
                         <div class="swiper-slide h-100">
                             <div class="card bg-custome rounded-5 m-auto p-3 w-75">
                                 <div class="row g-0 m-auto">
                                     <div class="col-md-4 w-50">
                                         <img src="./assets/img/certificate /certificate6.jpeg"
-                                            class="img-fluid rounded-5" alt="...">
+                                            class="img-fluid rounded-5" alt="certificate6">
                                     </div>
                                     <div class="col-md-8 text-start m-auto w-50">
                                         <div class="card-body">
-                                            <h3 class="card-title">Learn to Make Web Front End for Beginners</h3>
+                                            <h3 class="card-title myFont">Learn to Make Web Front End for Beginners</h3>
                                             <p class="card-text">Applying Modern Front-End Techniques and
                                                 Principles: Building Dynamic, Aesthetic, and User-Friendly User
                                                 Interfaces to Enhance Better Web Experiences.</p>
@@ -277,12 +277,166 @@
                     <div class="swiper-button-prev swiper-button-prev2"></div>
                 </div>
             </div>
-            </div>
-
         </section>
+
+        <!-- Skills Section -->
+        <section class="skills py-5 myFont">
+            <div class="text-center myFont">
+                <h4 class="text-main fw-medium">Skills</h4>
+                <h2 class="text-center fw-bolder fs-2">Skills I'm Building in Web & Mobile Development</h2>
+                <p></p>
+            </div>
+            <div class="container py-5">
+                <div class="container text-center">
+                    <div class="card-custome">
+                        <div class="row row-cols-7 p-3">
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/html-5.png" alt="">
+                                <p class="text-white fw-bold fs-4">HTML</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/css3.png" alt="">
+                                <p class="text-white fw-bold fs-4">CSS3</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/javascript.png" alt="">
+                                <p class="text-white fw-bold fs-4">JavaScript</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/c++.png" alt="">
+                                <p class="text-white fw-bold fs-4">C++</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/dart.svg" alt="">
+                                <p class="text-white fw-bold fs-4">Dart</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/flutter.svg" alt="">
+                                <p class="text-white fw-bold fs-4">Flutter</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/ubuntu.png" alt="">
+                                <p class="text-white fw-bold fs-4">Ubuntu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <footer>
+        <!-- Contact Section -->
+        <section class="contact-me" id="contact-me">
+            <div class="container-fluid d-flex pt-5">
+                <div class="d-flex flex-column align-items-start gap-2 ">
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="./assets/img/logo.png" width="8%" alt="">
+                        <h5 class="myFont my-auto fw-bold">AZURE<span class="text-main fw-lighter">DEV</span></h5>
+                    </div>
+                    <div class="w-50">
+                        <h4 class="fw-bold">Contact With Me</h4>
+                        <p>azwaranshari08@gmail.com</p>
+                        <p>Jl. Hasanudin No.G7B, Plombokan, Kec. Semarang Utara, Kota Semarang, Jawa Tengah 50171</p>
+                    </div>
+                    <div>
+                        <h4>Navigation Menu</h4>
+                        <ul class="navbar-nav  ">
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50 hvr-link" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50 hvr-link" href="#about-me">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50 hvr-link" href="#portfolio">Porftolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50 hvr-link" href="#certificate">Certificate</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50 hvr-link" href="#skill">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50 hvr-link" href="#contact-me">Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Form Contact -->
+                <form class="w-50 mx-auto">
+                    <div class="myFont">
+                        <h4 class="text-main">Contact</h4>
+                        <h1>Let's <span class="text-main">Talk</span></h1>
+                        <p>Please contact me for questions, collaboration, or further information.</p>
+                    </div>
+                    <!-- Name input -->
+                    <div data-mdb-input-init class=" form-outline mb-4">
+                        <label class="myFont form-label fw-bold text-main" for="name">Name</label>
+                        <input type="text" id="name" class="form-control bg-white py-2" placeholder="username" />
+                    </div>
+
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <label class="myFont form-label text-main fw-bold" for="email">Email address</label>
+                        <input type="email" id="email" class="form-control bg-white py-2"
+                            placeholder="example@gmail.com" />
+                    </div>
+
+                    <!-- Message input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <label class="myFont form-label text-main fw-bold" for="message ">Message</label>
+                        <textarea class="form-control bg-white  py-3" id="message"
+                            placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, repudiandae?"
+                            rows="4"></textarea>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label" for="form4Example4">
+                            Send me a copy of this message
+                        </label>
+                    </div>
+
+                    <!-- Social Media URL -->
+                    <div class="socialMedia">
+                        <ul class="d-flex justify-content-center gap-4 fs-4">
+                            <li><a class="hvr-link text-white" href="https://www.instagram.com/aawaii_/"
+                                    target="_blank"><i class=" bi bi-instagram"></i></a></li>
+                            <li><a class="hvr-link text-white"
+                                    href="https://www.linkedin.com/in/m-azwar-anshari-8690612a7/" target="_blank"><i
+                                        class="bi bi-linkedin"></i></a></li>
+                            <li><a class="hvr-link text-white" href="https://github.com/Azwar-as" target="_blank"><i
+                                        class="bi bi-github"></i></a>
+                            </li>
+                            <li><a class="hvr-link text-white" href="https://x.com/AzCode_" target="_blank"><i
+                                        class="bi bi-twitter-x"></i></a></li>
+                            <li><a class="hvr-link text-white" href="https://youtube.com/@The-Azure" target="_blank"><i
+                                        class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button data-mdb-ripple-init type="button"
+                        class="btn btn-primary btn-block rounded-3 w-100 mb-4 fw-bold">Send Message</button>
+                </form>
+            </div>
+            <div class="text-center">
+                <hr>
+                <p class="m-auto mb-1 fw-bold fs-5">Thank you for visiting my portfolio!</p>
+                <p class="my-auto">© 2024 <span class="text-main fw-medium">AzureDev</span>. All rights reserved.</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src=" ./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
@@ -320,7 +474,6 @@
                 prevEl: ".swiper-button-prev2",
             },
         });
-
     </script>
 </body>
 
