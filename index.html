@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg p-2 fixed-top bg-custom shadow blur-navbar">
+<body class="">
+    <nav class="overflow-hidden navbar navbar-expand-lg p-2 fixed-top bg-custom shadow blur-navbar">
         <div class=" container">
             <a href="#" class="d-flex logo-text text-white myFont">
                 <img class=" mx-4" src="./assets/img/logo.png" width="50" alt="">
@@ -54,10 +54,9 @@
             </div>
         </div>
     </nav>
-
     <main>
         <!-- Pendahuluan -->
-        <section class="introduction" id="home">
+        <section class="overflow-hidden introduction" id="home">
             <div class="video-background">
                 <video autoplay muted loop id="myVideo">
                     <source src="./assets/img/bg-animation3.mp4" type="video/mp4">
@@ -89,13 +88,15 @@
 
         <!-- About-me -->
         <section class="about-me myFont " id="about-me">
-            <div class="container">
-                <div class="d-flex  p-5">
-                    <div class="d-flex flex-column align-items-center  gap-4 ">
-                        <img class=" rounded-top-pill border-custom w-50 p-2" src="./assets/img/myProfile-1.png"
-                            width="35%" alt="">
+            <div class="container-fluid">
+                <div class="row gap-3 p-5 ">
+                    <div class="col text-center">
+                        <div class="w-50 m-auto">
+                            <img class=" rounded-top-pill img-fluid border-custom p-2 mb-3"
+                                src="./assets/img/myProfile-1.png" alt="">
+                        </div>
                         <!-- My Identity -->
-                        <div class="text-center w-75">
+                        <div class="text-center col">
                             <h1 class="text-white">M.Azwar Anshari</h1>
                             <p class="text-white-50 fs-5">Web and Mobile Developer</p>
                             <div class="fs-3 d-flex gap-5 justify-content-center">
@@ -105,8 +106,9 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Explanation about me -->
-                    <div class="my-auto w-75">
+                    <div class="my-auto col">
                         <h4 class="text-main">About Me</h4>
                         <h1 class="fw-bold">Good day, esteemed colleagues!</h1>
                         <p class="fw-normal fs-5 fontsTech text-white-50">
