@@ -45,7 +45,7 @@
                         <a class="nav-link text-white-50 hvr-link" href="#certificate">Certificate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" href="#skill">Skills</a>
+                        <a class="nav-link text-white-50 hvr-link" href="#mySkill">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white-50 hvr-link" href="#contact-me">Contact Me</a>
@@ -78,8 +78,9 @@
                             <span class="fw-bold text-white">Agree?</span>
                         </p>
                         <div class="d-flex justify-content-center ">
-                            <button class="btn-custom btn-cs" data-aos="flip-left">Contact
-                                Me</button>
+                            <a class="d-flex justify-content-center align-items-center btn-custom btn-cs"
+                                data-aos="flip-left" target="_blank" href="https://wa.me/6287848552847">Contact
+                                Me</a>
                         </div>
                     </div>
                 </div>
@@ -99,9 +100,12 @@
                             <h1 class="text-white">M.Azwar Anshari</h1>
                             <p class="text-white-50 fs-5">Web and Mobile Developer</p>
                             <div class="fs-3 d-flex gap-5 justify-content-center">
-                                <a href="" class=" hvr-link text-white "><i class="bi bi-instagram"></i></a>
-                                <a href="" class=" hvr- link text-white "><i class="bi bi-github"></i></a>
-                                <a href="" class=" hvr-link text-white "><i class="bi bi-linkedin"></i></a>
+                                <a href="https://www.instagram.com/aawaii_/" target="_blank"
+                                    class="hvr-link text-white "><i class="bi bi-instagram"></i></a>
+                                <a href="https://github.com/Azwar-as" class="hvr- link text-white " target="_blank"><i
+                                        class="bi bi-github"></i></a>
+                                <a href="https://www.linkedin.com/in/muhammad-azwar-anshari/" target="_blank"
+                                    class="hvr-link text-white " target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -284,7 +288,7 @@
         </section>
 
         <!-- Skills Section -->
-        <section class="skills py-5 myFont">
+        <section class="skills py-5 myFont" id="mySkill">
             <div class="text-center myFont">
                 <h4 class="text-main fw-medium">Skills</h4>
                 <h2 class="text-center fw-bolder fs-2">Skills I'm Building in Web & Mobile Development</h2>
@@ -321,6 +325,36 @@
                             <div class="col">
                                 <img class=" py-3 w-50" src="./assets/img/icon/ubuntu.png" alt="">
                                 <p class="text-white fw-bold fs-4">Ubuntu</p>
+                            </div>
+                        </div>
+                        <div class="row row-cols-7 p-3">
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-bootstrap-logo.svg" alt="">
+                                <p class="text-white fw-bold fs-4">Bootstrap</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-tailwindcss.svg" alt="">
+                                <p class="text-white fw-bold fs-4">Tailwinds</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-php-logo-80.svg" alt="">
+                                <p class="text-white fw-bold fs-4">PHP</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-python.svg" alt="">
+                                <p class="text-white fw-bold fs-4">Python</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-sass.svg" alt="">
+                                <p class="text-white fw-bold fs-4">Sass</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-node-js.svg" alt="">
+                                <p class="text-white fw-bold fs-4">Node JS</p>
+                            </div>
+                            <div class="col">
+                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-react-native.svg" alt="">
+                                <p class="text-white fw-bold fs-4">React JS</p>
                             </div>
                         </div>
                     </div>
@@ -363,7 +397,7 @@
                                 <a class="nav-link text-white-50 hvr-link" href="#certificate">Certificate</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white-50 hvr-link" href="#skill">Skills</a>
+                                <a class="nav-link text-white-50 hvr-link" href="#mySkill">Skills</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white-50 hvr-link" href="#contact-me">Contact Me</a>
@@ -374,7 +408,7 @@
                 </div>
 
                 <!-- Form Contact -->
-                <form class="w-50 mx-auto">
+                <form class="w-50 mx-auto" id="contact-form" action="http://localhost:3000/send-email" method="POST">
                     <div class="myFont">
                         <h4 class="text-main">Contact</h4>
                         <h1>Let's <span class="text-main">Talk</span></h1>
@@ -383,31 +417,32 @@
                     <!-- Name input -->
                     <div data-mdb-input-init class=" form-outline mb-4">
                         <label class="myFont form-label fw-bold text-main" for="name">Name</label>
-                        <input type="text" id="name" class="form-control bg-white py-2" placeholder="username" />
+                        <input type="text" id="inputName" name="name" class="form-control bg-white text-dark py-2"
+                            placeholder="username" required />
                     </div>
 
                     <!-- Email input -->
                     <div data-mdb-input-init class="form-outline mb-4">
                         <label class="myFont form-label text-main fw-bold" for="email">Email address</label>
-                        <input type="email" id="email" class="form-control bg-white py-2"
-                            placeholder="example@gmail.com" />
+                        <input type="email" id="inputEmail" name="email" class="form-control bg-white text-dark py-2"
+                            placeholder="example@gmail.com" required />
                     </div>
 
                     <!-- Message input -->
                     <div data-mdb-input-init class="form-outline mb-4">
-                        <label class="myFont form-label text-main fw-bold" for="message ">Message</label>
-                        <textarea class="form-control bg-white  py-3" id="message"
+                        <label class="myFont form-label text-main fw-bold" for="message">Message</label>
+                        <textarea class="form-control bg-white text-dark py-3" name="message" id="inputMessage"
                             placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, repudiandae?"
-                            rows="4"></textarea>
+                            rows="4" required></textarea>
                     </div>
 
-                    <!-- Checkbox -->
+                    <!-- Checkbox
                     <div class="form-check d-flex justify-content-center mb-4">
                         <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
                         <label class="form-check-label" for="form4Example4">
                             Send me a copy of this message
                         </label>
-                    </div>
+                    </div> -->
 
                     <!-- Social Media URL -->
                     <div class="socialMedia">
@@ -428,8 +463,9 @@
                     </div>
 
                     <!-- Submit button -->
-                    <button data-mdb-ripple-init type="button"
-                        class="btn btn-primary btn-block rounded-3 w-100 mb-4 fw-bold">Send Message</button>
+                    <button data-mdb-ripple-init type="submit"
+                        class="btn btn-primary btn-block rounded-3 w-100 mb-4 fw-bold" id="btnSend">Send
+                        Message</button>
                 </form>
             </div>
             <div class="text-center">

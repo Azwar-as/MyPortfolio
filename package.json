@@ -2,7 +2,22 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
+    "body-parser": "^2.2.0",
     "bootstrap": "^5.3.3",
-    "bootstrap-icons": "^1.11.3"
-  }
+    "bootstrap-icons": "^1.11.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "nodemailer": "^6.10.1"
+  },
+  "name": "main-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
