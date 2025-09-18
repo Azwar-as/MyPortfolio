@@ -5,57 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porftolio website</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Teko:wght@300..700&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body class="">
-    <nav class="overflow-hidden navbar navbar-expand-lg p-2 fixed-top bg-custom shadow blur-navbar">
-        <div class=" container">
-            <a href="#" class="d-flex logo-text text-white myFont">
-                <img class=" mx-4" src="./assets/img/logo.png" width="50" alt="">
-                <p class="my-auto fw-bold fs-5">AZURE<span class="text-main fw-lighter">DEV</span></p>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 fw-medium mx-auto gap-2">
-                    <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" href="#portfolio">Porftolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" href="#certificate">Certificate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" href="#mySkill">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white-50 hvr-link" href="#contact-me">Contact Me</a>
-                    </li>
-                </ul>
+    <div class="sticky-top">
+        <nav class="overflow-hidden navbar navbar-expand-lg p-2  shadow blur-navbar">
+            <div class="container">
+                <a href="#" class="d-flex logo-text text-white myFont">
+                    <img class="m-auto" src="./assets/img/logo.png" width="90" alt="">
+                    <p class=" my-auto fw-bold fs-5">WARZ<span class="text-main fw-lighter">DEV</span></p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 fw-medium mx-auto gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link text-body-secondary hvr-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body-secondary hvr-link" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body-secondary hvr-link" href="#portfolio">Porftolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body-secondary hvr-link" href="#certificate">Certificate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body-secondary hvr-link" href="#mySkill">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-body-secondary hvr-link" href="#contact-me">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <main>
         <!-- Pendahuluan -->
         <section class=" introduction" id="home">
@@ -68,7 +69,7 @@
             <div class=" mt-4 py-4">
                 <div class="mt-4 py-5">
                     <div class="mt-5 text-center myFont">
-                        <p class="text-main fs-5 fw-lighter"><span class="fw-bold">AZURE</span>DEV</p>
+                        <p class="text-main fs-5 fw-lighter"><span class="fw-bold">WARZ</span>DEV</p>
                         <h1 class="fs-custom fw-bold text-white" data-aos="fade-down">Hello everyone!
                         </h1>
                         <h3 class="text-white pb-5 fs-custom fw-bold" data-aos="flip-up">I am a,<span
@@ -299,64 +300,46 @@
             <div class="container py-5">
                 <div class="container text-center">
                     <div class="card-custome">
-                        <div class="row row-cols-7 p-3">
+                        <div class="row row-cols-2 row-cols-lg-4 p-3">
+                            <!-- Rows 1 -->
                             <div class="col">
-                                <img class=" py-3 w-50 img" src="./assets/img/icon/html-5.png" alt="">
+                                <img class=" p-3 w-50" src="./assets/img/icon/html-5.png" alt="">
                                 <p class="text-white fw-bold fs-4">HTML</p>
                             </div>
+                            <!-- Rows 2 -->
                             <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/css3.png" alt="">
+                                <img class=" p-3 w-50" src="./assets/img/icon/css3.png" alt="">
                                 <p class="text-white fw-bold fs-4">CSS3</p>
                             </div>
+                            <!-- Row 3 -->
                             <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/javascript.png" alt="">
+                                <img class=" p-3 w-50" src="./assets/img/icon/javascript.png" alt="">
                                 <p class="text-white fw-bold fs-4">JavaScript</p>
                             </div>
+                            <!-- Row 4 -->
                             <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/c++.png" alt="">
+                                <img class=" p-3 w-50" src="./assets/img/icon/c++.png" alt="">
                                 <p class="text-white fw-bold fs-4">C++</p>
                             </div>
+                            <!-- Row 5 -->
                             <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/dart.svg" alt="">
-                                <p class="text-white fw-bold fs-4">Dart</p>
-                            </div>
-                            <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/flutter.svg" alt="">
-                                <p class="text-white fw-bold fs-4">Flutter</p>
-                            </div>
-                            <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/ubuntu.png" alt="">
+                                <img class=" p-3 w-50" src="./assets/img/icon/ubuntu.png" alt="">
                                 <p class="text-white fw-bold fs-4">Ubuntu</p>
                             </div>
-                        </div>
-                        <div class="row row-cols-7 p-3">
+                            <!-- Row 6 -->
                             <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-bootstrap-logo.svg" alt="">
+                                <img class=" p-3 w-50" src="./assets/img/icon/icons8-bootstrap-logo.svg" alt="">
                                 <p class="text-white fw-bold fs-4">Bootstrap</p>
                             </div>
+                            <!-- Row 7 -->
                             <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-tailwindcss.svg" alt="">
+                                <img class=" p-3 w-50" src="./assets/img/icon/icons8-tailwindcss.svg" alt="">
                                 <p class="text-white fw-bold fs-4">Tailwinds</p>
                             </div>
+                            <!-- Row 8 -->
                             <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-php-logo-80.svg" alt="">
-                                <p class="text-white fw-bold fs-4">PHP</p>
-                            </div>
-                            <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-python.svg" alt="">
-                                <p class="text-white fw-bold fs-4">Python</p>
-                            </div>
-                            <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-sass.svg" alt="">
+                                <img class=" p-3 w-50" src="./assets/img/icon/icons8-sass.svg" alt="">
                                 <p class="text-white fw-bold fs-4">Sass</p>
-                            </div>
-                            <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-node-js.svg" alt="">
-                                <p class="text-white fw-bold fs-4">Node JS</p>
-                            </div>
-                            <div class="col">
-                                <img class=" py-3 w-50" src="./assets/img/icon/icons8-react-native.svg" alt="">
-                                <p class="text-white fw-bold fs-4">React JS</p>
                             </div>
                         </div>
                     </div>
@@ -478,10 +461,8 @@
         </section>
     </footer>
 
-    <script src=" ./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
