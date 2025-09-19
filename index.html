@@ -63,17 +63,17 @@
             <div class="video-background">
                 <video autoplay muted loop id="myVideo">
                     <source src="./assets/img/bg-animation3.mp4" type="video/mp4">
-                    Your browser does not support HTML5 video.
+                    <!-- Your browser does not support HTML5 video. -->
                 </video>
             </div>
-            <div class=" mt-4 py-4">
+            <div class="m-auto">
                 <div class="mt-4 py-5">
                     <div class="mt-5 text-center myFont">
                         <p class="text-main fs-5 fw-lighter"><span class="fw-bold">WARZ</span>DEV</p>
                         <h1 class="fs-custom fw-bold text-white" data-aos="fade-down">Hello everyone!
                         </h1>
-                        <h3 class="text-white pb-5 fs-custom fw-bold" data-aos="flip-up">I am a,<span
-                                class="text-main fw-bolder" id="element"></span>
+                        <h3 class="text-white pb-5 fs-custom fw-bold" data-aos="flip-up">I am a,
+                            <span class="text-main fw-bolder" id="element"></span>
                         </h3>
                         <p class="px-1 text-white-50 pb-3" data-aos="zoom-in-up">Being a web and mobile developer is fun
                             with
@@ -93,11 +93,14 @@
         <!-- About-me -->
         <section class="about-me myFont " id="about-me">
             <div class="container-fluid">
-                <div class="row gap-3 p-5 ">
+                <div class="row gap-3 ">
                     <div class="col text-center">
+                        <!-- img profile -->
                         <div class="w-50 m-auto">
-                            <img class=" rounded-top-pill img-fluid p-2 mb-3" src="./assets/img/myphotos3.jpg" alt="">
+                            <img class="rounded-pill img-thumbnail p-2 mb-3" width="100%"
+                                src="./assets/img/myphotos3.jpg" alt="">
                         </div>
+
                         <!-- My Identity -->
                         <div class="text-center col">
                             <h1 class="text-white">M.Azwar Anshari</h1>
@@ -114,7 +117,7 @@
                     </div>
 
                     <!-- Explanation about me -->
-                    <div class="my-auto col">
+                    <div class="m-auto col">
                         <h4 class="text-main">About Me</h4>
                         <h1 class="fw-bold">Good day, esteemed colleagues!</h1>
                         <p class="fw-normal fs-5 fontsTech text-white-50">
@@ -130,27 +133,32 @@
         </section>
 
         <!-- Porftfolio Section -->
-        <section class="portfolio" id="portfolio">
-            <div class="container-fluid">
-                <div class="myFont text-white text-center pb-5">
-                    <h4 class="text-main">Portfolio</h4>
-                    <h1 class="fw-bold">Latest Project</h1>
-                    <p class="text-white-50 fw-medium"></p>
-                </div>
-                <div class="swiper-container1">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide   rounded-3"
-                            style="background-image: url('./assets/img/portfolio/portfolio1.png')"></div>
-                        <div class="swiper-slide   rounded-3"
-                            style="background-image: url('./assets/img/portfolio/portfolio2.png')"></div>
-                        <div class="swiper-slide  rounded-3"
-                            style="background-image: url('./assets/img/portfolio/portfolio3.png')"></div>
-                        <div class="swiper-slide  rounded-3"
-                            style="background-image: url('./assets/img/portfolio/portfolio4.png')"></div>
-                        <div class="swiper-slide  rounded-3"
-                            style="background-image: url('./assets/img/portfolio/portfolio5.jpg')"></div>
+        <section class="container py-5">
+            <div class="myFont text-white text-center ">
+                <h4 class="text-main">Portfolio</h4>
+                <h1 class="fw-bold">Latest Project</h1>
+                <p class="text-white-50 fw-medium"></p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/img/portfolio/portfolio1.png" />
                     </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/portfolio/portfolio2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/portfolio/portfolio3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/portfolio/portfolio4.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/img/portfolio/portfolio5.jpg" />
+                    </div>
+
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -508,30 +516,22 @@
     <script src="./assets/js/script.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer'],
-            typeSpeed: 80,
-            backSpeed: 50,
-            loop: true,
+            strings: ['Web Developer.'],
+            typeSpeed: 90,
+            // backSpeed: 50,
+            // loop: true,
         });
         AOS.init({
             duration: 800,
         });
     </script>
     <script type="module">
-        var swiper1 = new Swiper(".swiper-container1", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 2,
-            speed: 600,
-            coverflowEffect: {
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
-            loop: true,
         });
         var swiper2 = new Swiper(".swiper-container2", {
             navigation: {
