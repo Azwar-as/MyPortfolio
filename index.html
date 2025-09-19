@@ -156,7 +156,6 @@
                     <div class="swiper-slide">
                         <img src="./assets/img/portfolio/portfolio5.jpg" />
                     </div>
-
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -527,10 +526,19 @@
     </script>
     <script type="module">
         var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true,
             },
         });
         var swiper2 = new Swiper(".swiper-container2", {
