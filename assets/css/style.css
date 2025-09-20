@@ -98,11 +98,11 @@ video {
 
 /* Contact With Me, Nested Contact Me Section */
 .contact {
-  width: 50%;
+  width: 58%;
 }
 @media (max-width: 850px) {
   .contact {
-    width: 75%;
+    width: 90%;
   }
 }
 
