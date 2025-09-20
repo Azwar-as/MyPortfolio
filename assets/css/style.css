@@ -96,6 +96,16 @@ video {
   padding: 1.5rem;
 }
 
+/* Contact With Me, Nested Contact Me Section */
+.contact {
+  width: 50%;
+}
+@media (max-width: 850px) {
+  .contact {
+    width: 75%;
+  }
+}
+
 /* --- Social Media Styles --- */
 .socialMedia li {
   list-style-type: none;
