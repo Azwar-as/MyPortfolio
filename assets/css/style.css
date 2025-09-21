@@ -1,11 +1,9 @@
 /* --- Global Styles --- */
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 body {
   width: 100%;
-  overflow-x: hidden;
 }
 
 /* --- Custom Font Styles --- */
