@@ -17,7 +17,7 @@ document
     try {
       // Kirim data ke server
       const response = await fetch(
-        "https://contact_backend.vercel.app/api/send-email",
+        "https://contactbackend.vercel.app/api/send-email",
         {
           method: "POST",
           headers: {
@@ -31,7 +31,7 @@ document
 
       if (response.ok) {
         alert("Message sent successfully!");
-        document.getElementById("contactForm").reset(); // Reset form setelah berhasil
+        document.getElementById("contactForm").reset();
       } else {
         alert("Failed to send message.");
         console.error("Server response:", data);
