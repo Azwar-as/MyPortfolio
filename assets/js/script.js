@@ -17,7 +17,7 @@ document
     try {
       // Kirim data ke server
       const response = await fetch(
-        "https://webportfolio1-be-production.up.railway.app/send/email",
+        "https://contact_backend.vercel.app/api/send-email",
         {
           method: "POST",
           headers: {
