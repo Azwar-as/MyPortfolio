@@ -17,7 +17,7 @@ document
     try {
       // Kirim data ke server
       const response = await fetch(
-        "https://contactbackend.vercel.app/api/send-email",
+        "https://contactbackend-ten.vercel.app/api/send-email",
         {
           method: "POST",
           headers: {
